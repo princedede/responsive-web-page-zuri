@@ -43,7 +43,33 @@ ul li a:hover {
     background: #fff;
     padding: 0.5rem;
 }
+@media screen and (max-width: 768px) {
+    div.nav-bar {
+      /* For mobile devices: */
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        width: 100vw;
+    }
 
+    div.logo {
+        font-size: 1.3rem;
+    }
+
+    ul.nav-links {
+        flex-direction: column;
+    }
+
+    ul li {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    ul li a {
+        display: block;
+
+    }
+}
 div.hero-section {
     background: #304353;
     padding: 10rem;
